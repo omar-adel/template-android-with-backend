@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="ShapeView">
+        <attr name="shape" format="integer">
+            <enum name="rectangle" value="0" />
+            <enum name="square" value="1" />
+            <enum name="oval" value="2" />
+            <enum name="circle" value="3" />
+            <enum name="triangle" value="4" />
+        </attr>
+        <attr name="direction" format="integer">
+            <enum name="up" value="0" />
+            <enum name="down" value="1" />
+            <enum name="left" value="2" />
+            <enum name="right" value="3" />
+        </attr>
+        <attr name="color_shape" format="color|reference" />
+        <attr name="style" format="integer">
+            <enum name="fill" value="0" />
+            <enum name="stroke" value="1" />
+            <enum name="fill_and_stroke" value="2" />
+        </attr>
+        <attr name="stroke_width" format="dimension" />
+    </declare-styleable>
+    <attr name="topBarColor" format="reference|color" />
+
+</resources>

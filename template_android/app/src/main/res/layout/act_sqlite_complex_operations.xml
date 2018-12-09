@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.TestSqliteDbflow.CategoriesAndItems.ComplexOperations.ComplexOperations">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getCategoriesWithoutItems"
+            android:layout_marginTop="@dimen/small_margin"
+            android:onClick="onGetCategoriesWithoutItems" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getCategoriesWithItems"
+            android:layout_marginTop="@dimen/small_margin"
+            android:onClick="onGetCategoriesWithItems" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getItemsByCategoryId"
+            android:layout_marginTop="@dimen/small_margin"
+            android:onClick="onGetItemsByCategoryId" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getItemsByCategoriesIds"
+            android:layout_marginTop="@dimen/small_margin"
+            android:onClick="onGetItemsByCategoriesIds" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getCategoriesWhereIdInIds"
+            android:layout_marginTop="@dimen/small_margin"
+            android:onClick="onGetCategoriesWhereIdInIds" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getItemsWhereIdInCategoriesIds"
+            android:layout_marginTop="@dimen/small_margin"
+            android:onClick="onGetItemsWhereIdInCategoriesIds" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getCustomList"
+            android:layout_marginTop="@dimen/small_margin"
+            android:onClick="onGetCustomListCategoriesItemsJoin" />
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="no operation yet"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="@dimen/small_margin" />
+    </LinearLayout>
+</ScrollView>

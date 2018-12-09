@@ -1,0 +1,49 @@
+<resources>
+
+    <string name="app_name">Template</string>
+      <string name="noInternetConnection">no internet connection</string>
+    <string name="emptylist">empty list</string>
+    <string name="alert">alert</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="cancel">Cancel</string>
+    <string name="pick">pick a picture</string>
+    <string name="tryanothertype">please try another type</string>
+    <string name="errorincamera">error in camera , try again</string>
+    <string name="add_item">add item</string>
+    <string name="done">ok</string>
+    <string name="done2">yes</string>
+    <string name="noalert">no</string>
+
+    <string name="tap_to_reload">Tap to reload</string>
+    <string name="error_msg_unknown">An unexpected error occurred</string>
+
+    <string name="enter_new_note">Enter new note</string>
+    <string name="add">Add</string>
+    <string name="click_to_remove">Click a note to remove it</string>
+    <string name="action_send">insert category</string>
+    <string name="empty_note">please enter your note</string>
+    <string name="sqlite_complex_operations">Test Sqlite</string>
+    <string name="sqlite_item_operations">Test Item Sqlite</string>
+    <string name="sqlite_notes">Notes</string>
+    <string name="map_dynamic">Map Dynamic</string>
+    <string name="map_static">Map Static</string>
+    <string name="socket_test">Test Socket</string>
+    <string name="menu_categories">Categories</string>
+    <string name="menu_items">Items</string>
+    <string name="test_rest_api_categories">Categories</string>
+    <string name="test_rest_api_items">Items</string>
+    <string name="all">all</string>
+    <string name="save">Save</string>
+    <string name="remove">Remove</string>
+    <string name="enter_name">Name...</string>
+    <string name="enter_description">Description...</string>
+    <string name="empty_field">you must fill this field</string>
+    <string name="valid_email">Please Check and Enter a valid Email Address</string>
+    <string name="done_successfully">Done Successfully</string>
+    <string name="error_in_webservice">Error</string>
+    <string name="category_details">Category Details</string>
+    <string name="item_details">Item Details</string>
+    <string name="sqlite_folder_app_name_english">TemplateSqliteFiles</string>
+
+</resources>

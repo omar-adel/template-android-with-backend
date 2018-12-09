@@ -1,0 +1,9 @@
+<resources>
+    <string name="enable_gps">Enable Gps</string>
+    <string name="noInternetConnection">no internet connection</string>
+    <string name="gpsNoAvailable">gps is not available</string>
+    <string name="gpsIsDisabled">gps is disabled</string>
+    <string name="api_key">AIzaSyCdT-d5CkGIGAGCjPV-guZ5Bk1FmdDtTjI</string>
+    <string name="marker_clicked">marker clicked</string>
+    <string name="info_window_clicked">info window clicked</string>
+</resources>

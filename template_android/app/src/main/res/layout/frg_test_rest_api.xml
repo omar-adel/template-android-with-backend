@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <modules.general.ui.utils.GUI.CustomSpinner
+        android:id="@+id/spCategories"
+        style="@style/matchWrapStyle"
+        android:visibility="gone"
+        android:background="@android:color/transparent"></modules.general.ui.utils.GUI.CustomSpinner>
+
+
+    <modules.general.ui.utils.GUI.RecyclerViewEmptySupport
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/small_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_below="@+id/spCategories"
+        android:layout_above="@+id/btnAdd" />
+
+    <TextView
+        android:id="@+id/txtvEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/emptylist"
+        android:textSize="@dimen/medium_text_size"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/small_margin"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:text="@string/add"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:background="@android:color/holo_blue_dark" />
+
+
+</RelativeLayout>

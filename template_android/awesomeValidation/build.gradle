@@ -1,0 +1,57 @@
+apply plugin: "com.android.library"
+//apply plugin: "com.getkeepsafe.dexcount"
+//apply from: "gradle/script/coverage.gradle"
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+          consumerProguardFiles "proguard-rules.pro"
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            testCoverageEnabled true
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+        }
+    }
+    sourceSets {
+        main {
+            java.srcDirs = ["src/main/java"]
+            resources.srcDirs = ["src/main/res"]
+        }
+        test {
+            java.srcDirs = ["src/test/java"]
+            resources.srcDirs = ["src/test/res"]
+        }
+        androidTest.setRoot("test")
+    }
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+ext {
+    guavaVersion = "23.0-android"
+}
+
+dependencies {
+    implementation 'com.android.support:design:28.0.0'
+    implementation("com.google.guava:guava:${guavaVersion}") {
+        exclude module: "jsr305"
+    }
+
+}
+
+
