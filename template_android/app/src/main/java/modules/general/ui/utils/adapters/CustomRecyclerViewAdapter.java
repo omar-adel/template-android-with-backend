@@ -1,14 +1,13 @@
 package modules.general.ui.utils.adapters;
 
 import android.content.Context;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.RecyclerView;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.ViewGroup;
 
 import com.example.template.model.backend.APIService;
 import modules.general.model.backend.ApiUtils;
 import com.example.template.ui.TestRestApi.ViewHolders.RestApiListFrgCategoriesVH;
-import com.example.template.ui.TestRestApi.ViewHolders.RestApiListFrgItemsVH;
 import com.example.template.ui.TestSqliteDbflow.CategoriesAndItems.Simple.ViewHolders.SqliteListFrgCategoriesVH;
 import com.example.template.ui.TestSqliteDbflow.CategoriesAndItems.Simple.ViewHolders.SqliteListFrgItemsVH;
 import com.example.template.ui.TestSqliteDbflow.notes.NoteVH;

@@ -1,7 +1,7 @@
 package com.example.template.ui.custom_views.SpinnerViews;
 
 import android.content.Context;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.widget.LinearLayout;
 import android.widget.TextView;

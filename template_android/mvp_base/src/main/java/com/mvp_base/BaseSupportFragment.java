@@ -2,8 +2,8 @@ package com.mvp_base;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -65,7 +65,7 @@ public abstract class BaseSupportFragment<P extends Base.IPresenter>
         return mPresenter;
     }
 
-    @android.support.annotation.Nullable
+    @androidx.annotation.Nullable
     @Override
     public View getView() {
         return view;

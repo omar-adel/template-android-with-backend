@@ -1,7 +1,7 @@
 package com.example.template.ui.TestSqliteDbflow.CategoriesAndItems.Simple.presenters.single;
 
 import android.content.Context;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.template.model.DataManager;
 import com.example.template.model.bean.sqlite.Categories;
@@ -12,7 +12,6 @@ import com.example.template.model.bean.sqlite.querymodels.CategoriesWithOutItems
 import com.example.template.ui.TestSqliteDbflow.CategoriesAndItems.Simple.fragments.SqliteSingleFragment;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import static modules.general.utils.Constants.SqliteSourceCategories;
 import static modules.general.utils.Constants.SqliteSourceItems;

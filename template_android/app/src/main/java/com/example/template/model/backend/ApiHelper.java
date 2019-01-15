@@ -17,7 +17,7 @@ package com.example.template.model.backend;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.util.Log;
 
 import com.example.template.model.DataManager;

@@ -54,7 +54,7 @@ public class Splash extends BaseAppCompatActivity<ISplashContract.ISplashPresent
 //
                 // myIntent = new Intent(Splash.this, SocketMainActivity.class);
           //     myIntent = new Intent(Splash.this, MapDisplayActivity.class);
-      //   myIntent = new Intent(Splash.this, MapControlActivity.class);
+    //  myIntent = new Intent(Splash.this, MapControlActivity.class);
 
                 startActivity(myIntent);
                 finish();

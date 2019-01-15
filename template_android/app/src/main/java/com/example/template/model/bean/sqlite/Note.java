@@ -1,9 +1,8 @@
 package com.example.template.model.bean.sqlite;
 
-import android.content.Context;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.example.template.model.db.NoteTypeConverter;
 import modules.general.model.db.SqliteCallBack;
@@ -19,8 +18,6 @@ import com.raizlabs.android.dbflow.structure.database.transaction.QueryTransacti
 import java.util.ArrayList;
 
 import modules.general.model.bean.sqlite.BaseModelWithIData;
-
-import static modules.general.model.db.Constants.DBMethodGetAll;
 
 
 @Table(database = DatabaseModule.class)

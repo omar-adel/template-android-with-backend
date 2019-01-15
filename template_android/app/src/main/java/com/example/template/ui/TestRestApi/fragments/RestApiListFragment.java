@@ -4,8 +4,8 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
@@ -14,7 +14,6 @@ import android.widget.TextView;
 
 import com.example.template.R;
 import com.example.template.model.bean.CategoryRestApi;
-import com.example.template.model.bean.ItemRestApi;
 import com.example.template.ui.TestRestApi.RestApiSingleAct;
 import com.example.template.ui.TestRestApi.ViewHolders.RestApiListFrgCategoriesVH;
 import com.example.template.ui.TestRestApi.ViewHolders.RestApiListFrgItemsVH;
@@ -22,7 +21,7 @@ import com.example.template.ui.TestRestApi.presenter.list.IRestApiListFragmentCo
 import com.example.template.ui.TestRestApi.presenter.list.RestApiListFragmentPresenter;
 import modules.general.ui.utils.GUI.CustomSpinner;
 import modules.general.ui.utils.GUI.RecyclerViewEmptySupport;
-import modules.general.ui.utils.adapters.CustomRecyclerViewAdapter;
+
 import com.yqritc.recyclerviewflexibledivider.HorizontalDividerItemDecoration;
 
 import java.util.ArrayList;

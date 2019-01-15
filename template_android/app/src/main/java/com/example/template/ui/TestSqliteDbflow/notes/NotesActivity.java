@@ -15,8 +15,8 @@
  */
 package com.example.template.ui.TestSqliteDbflow.notes;
 
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
@@ -27,13 +27,11 @@ import com.basgeekball.awesomevalidation.model.IsEmptyRule;
 import com.basgeekball.awesomevalidation.model.Rule;
 import com.example.template.R;
 import com.example.template.model.bean.sqlite.Note;
-import com.example.template.ui.TestSqliteDbflow.notes.adapters.NotesAdapterExtending;
 import com.example.template.ui.TestSqliteDbflow.notes.presenter.NoteContract;
 import com.example.template.ui.TestSqliteDbflow.notes.presenter.NotePresenter;
 import modules.general.ui.parentview.ParentActivity;
 import modules.general.ui.utils.adapters.CustomRecyclerViewAdapter;
 
-import modules.general.ui.utils.adapters.CustomRecyclerViewAdapterExtending;
 import modules.general.utils.KeyBoardUtil;
 import modules.general.utils.validation.awesome.ValidationUtilAwesome;
 import modules.general.utils.validation.listeners.OnValidationCallBack;

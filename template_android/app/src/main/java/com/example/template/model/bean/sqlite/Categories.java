@@ -1,7 +1,6 @@
 package com.example.template.model.bean.sqlite;
 
-import android.content.Context;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import modules.general.model.db.SqliteCallBack;
 import modules.general.model.db.dbFlowDatabases.DatabaseModule;
@@ -18,8 +17,6 @@ import com.raizlabs.android.dbflow.structure.database.transaction.QueryTransacti
 
 import java.util.ArrayList;
 import java.util.List;
-
-import static modules.general.model.db.Constants.DBMethodGetAll;
 
 /**
  * Created by Net22 on 11/19/2017.

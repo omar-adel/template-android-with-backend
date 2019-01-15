@@ -1,7 +1,7 @@
 package modules.general.utils.validation.saripaar;
 
 import android.content.Context;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;

@@ -2,7 +2,7 @@ package com.example.template;
 
 import android.app.Application;
 import android.content.Context;
-import android.support.multidex.MultiDex;
+import androidx.multidex.MultiDex;
 
 import com.example.template.model.DataManager;
 import modules.general.utils.Constants;
@@ -13,7 +13,6 @@ import java.net.URISyntaxException;
 
 import io.socket.client.IO;
 import io.socket.client.Socket;
-import modules.general.utils.FileUtils;
 import modules.general.utils.LanguageUtil;
 
 

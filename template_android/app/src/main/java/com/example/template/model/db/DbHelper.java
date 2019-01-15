@@ -17,8 +17,7 @@ package com.example.template.model.db;
 
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.util.Log;
+import androidx.annotation.NonNull;
 
 import modules.general.model.bean.sqlite.BaseModelWithIData;
 
@@ -26,9 +25,6 @@ import com.example.template.model.bean.sqlite.Categories;
 import com.example.template.model.bean.sqlite.Categories_Table;
 import com.example.template.model.bean.sqlite.Items;
 import com.example.template.model.bean.sqlite.Items_Table;
-import com.example.template.model.bean.sqlite.Note;
-import com.example.template.model.bean.sqlite.NoteType;
-import com.example.template.model.bean.sqlite.SimpleItem;
 import com.example.template.model.bean.sqlite.querymodels.CategoriesItemsQueryModel;
 import com.example.template.model.bean.sqlite.querymodels.CategoriesWithOutItemsQueryModel;
 
@@ -38,9 +34,7 @@ import com.raizlabs.android.dbflow.sql.language.CursorResult;
 import com.raizlabs.android.dbflow.sql.language.SQLite;
 import com.raizlabs.android.dbflow.structure.database.transaction.QueryTransaction;
 
-import java.text.DateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 

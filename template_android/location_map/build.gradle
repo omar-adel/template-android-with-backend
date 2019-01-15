@@ -8,7 +8,7 @@ android {
  dependencies {
      api 'com.google.android.gms:play-services-maps:16.0.0'
      api 'com.google.android.gms:play-services-location:16.0.0'
-     implementation 'com.android.support:design:28.0.0'
+     implementation 'com.google.android.material:material:1.1.0-alpha02'
      //use this here
      api project(path: ':mvp_base')
      // and then remove

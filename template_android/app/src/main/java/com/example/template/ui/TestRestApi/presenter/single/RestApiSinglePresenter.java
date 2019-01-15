@@ -2,9 +2,9 @@ package com.example.template.ui.TestRestApi.presenter.single;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.example.template.ui.TestRestApi.RestApiSingleAct;
 import com.example.template.ui.TestRestApi.fragments.RestApiSingleFragment;

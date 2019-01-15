@@ -1,10 +1,9 @@
 package com.example.template.ui.TestRestApi.presenter.single;
 
 import android.content.Context;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.template.model.DataManager;
-import modules.general.model.backend.RestApiCallBack;
 import com.example.template.model.bean.CategoriesRestApiResponse;
 import com.example.template.model.bean.CategoryRestApi;
 import com.example.template.model.bean.CategoryRestApiResponse;
@@ -18,9 +17,7 @@ import modules.general.model.db.SqliteCallBack;
 import com.example.template.ui.TestRestApi.fragments.RestApiSingleFragment;
 
 import java.util.ArrayList;
-import java.util.List;
 
-import static modules.general.model.db.Constants.DBMethodGetById;
 import static modules.general.utils.Constants.RestApiSourceCategories;
 import static modules.general.utils.Constants.RestApiSourceItems;
 import static modules.general.utils.Constants.addCategory;
