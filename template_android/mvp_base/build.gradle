@@ -18,7 +18,7 @@ android {
 }
 
  dependencies {
-     implementation 'androidx.appcompat:appcompat:1.1.0-alpha01'
+    implementation 'androidx.appcompat:appcompat:1.0.2'
      api 'com.jakewharton:butterknife:10.0.0'
      annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
  }

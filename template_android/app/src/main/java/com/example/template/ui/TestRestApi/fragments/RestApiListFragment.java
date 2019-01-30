@@ -67,13 +67,13 @@ public class RestApiListFragment extends BaseSupportFragment<RestApiListFragment
 
         sourceFragment = getArguments().getString(RestApiListSource);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContainerActivity(),
-                LinearLayoutManager.VERTICAL, false);
+                RecyclerView.VERTICAL, false);
         rv.setLayoutManager(layoutManager);
         if (sourceFragment.equals(RestApiSourceCategories)) {
 
            adapter = new GenericRecyclerViewAdapter(getContainerActivity(), new GenericRecyclerViewAdapter.AdapterDrawData() {
                 @Override
-                public RecyclerView.ViewHolder getView(ViewGroup parent) {
+                public RecyclerView.ViewHolder getView(ViewGroup parent, int viewType) {
 
                     return new RestApiListFrgCategoriesVH( getContainerActivity(),
                             RestApiListFrgCategoriesVH.getView(getContainerActivity(), parent));
@@ -90,7 +90,7 @@ public class RestApiListFragment extends BaseSupportFragment<RestApiListFragment
 
             adapter = new GenericRecyclerViewAdapter(getContainerActivity(), new GenericRecyclerViewAdapter.AdapterDrawData() {
                 @Override
-                public RecyclerView.ViewHolder getView(ViewGroup parent) {
+                public RecyclerView.ViewHolder getView(ViewGroup parent, int viewType) {
 
                     return new RestApiListFrgItemsVH( getContainerActivity(),
                             RestApiListFrgItemsVH.getView(getContainerActivity(), parent));

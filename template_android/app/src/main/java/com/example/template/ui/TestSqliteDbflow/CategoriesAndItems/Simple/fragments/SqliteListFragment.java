@@ -16,6 +16,8 @@ import com.example.template.model.bean.sqlite.querymodels.CategoriesWithOutItems
 import com.example.template.ui.TestSqliteDbflow.CategoriesAndItems.Simple.SqliteSingleAct;
 import com.example.template.ui.TestSqliteDbflow.CategoriesAndItems.Simple.presenters.list.ISqliteListFragmentContract;
 import com.example.template.ui.TestSqliteDbflow.CategoriesAndItems.Simple.presenters.list.SqliteListFragmentPresenter;
+
+import androidx.recyclerview.widget.RecyclerView;
 import modules.general.ui.utils.GUI.CustomSpinner;
 import modules.general.ui.utils.GUI.RecyclerViewEmptySupport;
 import modules.general.ui.utils.adapters.CustomRecyclerViewAdapter;
@@ -66,7 +68,7 @@ public class SqliteListFragment extends BaseSupportFragment<SqliteListFragmentPr
 
         sourceFragment = getArguments().getString(SqliteListSource);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContainerActivity(),
-                LinearLayoutManager.VERTICAL, false);
+                RecyclerView.VERTICAL, false);
         rv.setLayoutManager(layoutManager);
         if (sourceFragment.equals(SqliteSourceCategories)) {
             adapter = new CustomRecyclerViewAdapter<CategoriesWithOutItemsQueryModel>(getContainerActivity(), SqliteListCategoriesType);

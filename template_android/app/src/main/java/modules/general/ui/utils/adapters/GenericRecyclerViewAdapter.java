@@ -1,25 +1,35 @@
 package modules.general.ui.utils.adapters;
 
+
+
 import android.content.Context;
-import androidx.recyclerview.widget.RecyclerView;
 import android.view.ViewGroup;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  *
  */
 public   class GenericRecyclerViewAdapter<T> extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
-    public interface AdapterDrawData{
-        RecyclerView.ViewHolder getView(ViewGroup viewGroup);
+    public interface IAdapterDrawData{
+        int   getItemViewType (int position);
+        RecyclerView.ViewHolder getView(ViewGroup viewGroup, int viewType);
         void bindView(GenericRecyclerViewAdapter genericRecyclerViewAdapter,
                       RecyclerView.ViewHolder holder, final Object item, final int position);
     }
+    public static abstract class AdapterDrawData implements IAdapterDrawData{
+        @Override
+        public int getItemViewType(int position) {
+            return 0;
+        }
+    }
+
     public ArrayList<T> mList = new ArrayList<>();
-     public Context mContext;
+    public Context mContext;
     public AdapterDrawData mAdapterDrawData;
 
     public GenericRecyclerViewAdapter(Context context, AdapterDrawData adapterDrawData) {
@@ -29,8 +39,13 @@ public   class GenericRecyclerViewAdapter<T> extends RecyclerView.Adapter<Recycl
     }
 
     @Override
+    public int getItemViewType(int position) {
+        return  mAdapterDrawData.getItemViewType(position);
+    }
+
+    @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return   mAdapterDrawData.getView(parent);
+        return   mAdapterDrawData.getView(parent,viewType);
     }
 
     @Override
@@ -76,6 +91,11 @@ public   class GenericRecyclerViewAdapter<T> extends RecyclerView.Adapter<Recycl
         notifyDataSetChanged();
     }
 
+    public void updateItem(int position, T data) {
+        mList.set(position, data);
+        notifyDataSetChanged();
+    }
+
     public void setAll(List<T> mItems) {
         mList.clear();
         for (int i = 0; i < mItems.size(); i++) {
@@ -108,7 +128,7 @@ public   class GenericRecyclerViewAdapter<T> extends RecyclerView.Adapter<Recycl
     }
 
     public void clearData() {
-         int size = this.mList.size();
+        int size = this.mList.size();
         if (size > 0) {
             for (int i = 0; i < size; i++) {
                 this.mList.remove(0);
