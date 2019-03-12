@@ -79,12 +79,7 @@ public class LanguageUtil {
         return context;
     }
 
-    public static String getDeviceLocale()
-
-    {
-        Log.e("getDeviceLocale", Locale.getDefault().getISO3Language());
-        return Locale.getDefault().getISO3Language();
-    }
+  
 
 
 
